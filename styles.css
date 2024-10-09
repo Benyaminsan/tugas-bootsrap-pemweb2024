@@ -1,14 +1,4 @@
-/* TODO */
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
+/* Body and general styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,65 +7,71 @@ body {
     color: #333;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 p {
     margin: 5px 0;
 }
 
+/* Styling for the list and its items */
 ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     gap: 20px;
 }
 
-li {
+.activity-box {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    flex: 1;
     text-align: center;
+    flex: 1;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-li .activity-title {
+.activity-title {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-li .activity-time {
+.activity-time {
     margin-bottom: 10px;
     font-size: 1.2em;
 }
 
-li .button-container {
+.button-container {
     display: flex;
-    gap: 10px;
     justify-content: center;
+    gap: 10px;
 }
 
-button {
+.stop-btn {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     color: white;
+    background-color: red;
     cursor: pointer;
 }
 
-button:nth-of-type(1) {
-    background-color: red; 
+.start-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4caf50;
+    cursor: pointer;
 }
 
-button:nth-of-type(2) {
-    background-color: #4caf50; 
-}
-
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -93,34 +89,30 @@ th, td {
     border-right: 3px solid #ddd;
 }
 
+/* Custom styling for all table headers (green background) */
 th {
-    background-color: #4caf50;
-    color: white;
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    text-align: center;
 }
+
+/* Styling untuk header tabel agar berwarna hijau */
+.table thead th {
+    background-color: #4caf50 !important; /* Warna hijau */
+    color: white !important; /* Teks berwarna putih */
+}
+
 
 @media (max-width: 768px) {
     ul {
         flex-direction: column;
     }
 
-    li {
+    .activity-box {
         width: 100%;
-        margin-bottom: 20px;
     }
 
     table, th, td {
         font-size: 1em;
     }
 }
-
-@media (max-width: 1024px) {
-    ul {
-        flex-direction: column;
-    }
-
-    li {
-        margin: 0 auto 20px;
-        width: 80%;
-    }
-}
-
