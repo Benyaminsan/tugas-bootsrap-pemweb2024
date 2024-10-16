@@ -8,49 +8,66 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="container mt-4">
-    <h1 class="text-center"><strong>Productivity Tracker App</strong></h1>
+    <h1 class="text-center fw-bold">Productivity Tracker App</h1>
     <p><strong>Nama: Kelompok 1</strong></p>
-    <p><strong>NRP: </strong></p>
+    <ul>
+      <li><strong>NRP:</strong></li>
+      <li>5027231013</li>
+      <li>5027231024</li>
+      <li>5027231034</li>
+      <li>5027231043</li>
+      <li>5027231078</li>
+      <li>5027231084</li>
+    </ul>
 
-    <h2><strong>Current Activity</strong></h2>
+    <h2 class="fw-bold">Current Activity</h2>
     <p>List of activities that's on progress</p>
-    <div class="row">
-      <ul class="list-unstyled col-12 d-flex flex-wrap justify-content-between">
-        <li class="activity-box">
-          <div class="activity-title">Activity 1</div>
-          <div class="activity-time">01:10:34</div>
-          <div class="button-container">
-            <button class="stop-btn">Stop</button>
-            <button class="start-btn">Start</button>
+    <div class="row g-3">
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Activity 1</h5>
+            <p class="card-text fs-4">01:10:34</p>
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-danger">Stop</button>
+              <button class="btn btn-success">Start</button>
+            </div>
           </div>
-        </li>
-        <li class="activity-box">
-          <div class="activity-title">Activity 2</div>
-          <div class="activity-time">03:15:23</div>
-          <div class="button-container">
-            <button class="stop-btn">Stop</button>
-            <button class="start-btn">Start</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Activity 2</h5>
+            <p class="card-text fs-4">03:15:23</p>
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-danger">Stop</button>
+              <button class="btn btn-success">Start</button>
+            </div>
           </div>
-        </li>
-        <li class="activity-box">
-          <div class="activity-title">Activity 3</div>
-          <div class="activity-time">00:05:56</div>
-          <div class="button-container">
-            <button class="stop-btn">Stop</button>
-            <button class="start-btn">Start</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Activity 3</h5>
+            <p class="card-text fs-4">00:05:56</p>
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-danger">Stop</button>
+              <button class="btn btn-success">Start</button>
+            </div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
 
-    <h2><strong>Past Activity</strong></h2>
+    <h2 class="fw-bold mt-5">Past Activity</h2>
     <p>List of activities that have been done</p>
 
-    <table class="table">
-      <thead>
+    <table class="table table-bordered text-center">
+      <thead class="table-success">
         <tr>
           <th>Activity</th>
           <th>Time</th>
@@ -76,6 +93,6 @@
       </tbody>
     </table>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
   </body>
 </html>
